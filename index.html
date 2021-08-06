@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP ChatBot</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you? Click on the topic you wnat to brush up on" name="category">
+        <option value="WebDevelopment">AP: nₜₕ term</option>
+        <option value="DigitalMarketing">AP: sum of nₜₕ terms</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Okay. The formula for A.P. is 'Tₙ = a + (n - 1)d' where n is the number, d is 
+								   the common difference and a is the final term of the A.P. Reply with anything to continue.">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Okay. The formula for A.P. is 'Sₙ=n/2[2a + (n – 1)d]' or 'Sₙ=n/2[a + l]' where n is the number, d is 
+								   the common difference, l is the last term and a is the final term of the A.P. 
+								    Reply with anything to continue"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Now I will be elaborating on both of these so you can look through the topics and get a 
+							 better understanding of the same. Write anything to proceed">
+
+      <input type="text" data-conv-question="Arithmetic progression can be defined as a sequence where the differences between every two 
+					     consecutive terms are the same. The common difference is the difference between the second term of the
+					     A.P. and the first term, denoted by 'd' and the first term of the A.P. is given by 'a'. Putting the values in 
+					     the formula, you can find the solution. For further explanation, please Refer to your NCERT book." data-no-answer="true">
+			
+	<input type="text" data-conv-question="The sum of n terms of AP is the sum(addition) of first n terms of the arithmetic sequence. It is equal to n divided by 2 times the 
+					       sum of twice the first term – ‘a’ and the product of the difference between second and first term-‘d’ 
+					       also known as common difference, and (n-1), where n is numbers of terms to be added." data-no-answer="true">
+
+<!--       <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+	     type="email" name="email" required placeholder="What's your e-mail?"> -->
+
+      <select data-conv-question="Thank you , we hope you understood now.">
+        <option value="Yes">Yes I did.</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="#" alt="logo"></a>
+			</div>
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">Nth term of an A.P.</a></li>
+						<li><a href="#portfolio">Sum of n terms of an A.P.</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/banner.jpg');" id="home">
+	<ul class="socila_links">
+		<li><a href="#"><i class="fas fa-phone-alt" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fas fa-book-open" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fas fa-info" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>Arithmatic Progressions</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
