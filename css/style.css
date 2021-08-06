@@ -61,8 +61,13 @@ body,html{
 }
 h1{
 font-size: 60px;
-color: #fff;
+color: #EFB7B7;
 font-weight: 700;
+}
+h1{
+font-size: 30px;
+color: #EEEEEE;
+font-weight:500;
 }
 .socila_links{
 	position: absolute;
