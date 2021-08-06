@@ -26,23 +26,29 @@
 	<div class="my-conv-form-wrapper">
 		<form action="" method="GET" class="hidden">
 
-      <select data-conv-question="Hello! How can I help you" name="category">
+      <select data-conv-question="Hello! How can I help you? Click on the topic you wnat to brush up on" name="category">
         <option value="WebDevelopment">AP: nₜₕ term</option>
         <option value="DigitalMarketing">AP: sum of nₜₕ terms</option>
       </select>
 
       <div data-conv-fork="category">
         <div data-conv-case="WebDevelopment">
-          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+          <input type="text" name="domainName" data-conv-question="Okay. The formula for A.P. is 'Tₙ = a + (n - 1)d' where n is the number, d is 
+								   the common difference and a is the final term of the A.P. Reply with anything to continue.">    
         </div>
         <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
-          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+          <input type="text" name="companyName" data-conv-question="Okay. The formula for A.P. is 'Sₙ=n/2[2a + (n – 1)d]' where n is the number, d is 
+								   the common difference and a is the final term of the A.P. Reply with anything to continue"> 
         </div>
       </div>
 
-      <input type="text" name="name" data-conv-question="Please, Enter your name">
+      <input type="text" name="name" data-conv-question="Now I will be elaborating on both of these so you can look through the topics and get a 
+							 better understanding of the same. Write anything to proceed">
 
-      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+      <input type="text" data-conv-question="Arithmetic progression can be defined as a sequence where the differences between every two 
+					     consecutive terms are the same." data-no-answer="true">
+	<input type="text" data-conv-question="Arithmetic progression can be defined as a sequence where the differences between every two 
+					     consecutive terms are the same." data-no-answer="true">
 
       <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
 
